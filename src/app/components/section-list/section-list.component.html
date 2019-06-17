@@ -1,0 +1,7 @@
+<div class="container" fxLayoutAlign="center center">
+    <div  fxLayout="row wrap"  fxLayoutAlign="flex-start" fxLayout.lt-sm="column">
+        <app-section-overview *ngFor="let section of sections" [section]="section"
+            (userClick)="userClickedOnSection($event)"  fxFlex="0 1 33.3%" fxFlex.lt-md="0 1 50%" fxFlex.lt-sm="100%" >
+        </app-section-overview>
+    </div>
+</div>

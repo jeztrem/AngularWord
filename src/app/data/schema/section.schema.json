@@ -1,0 +1,122 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+        "id",
+        "header",
+        "book",
+        "chapter",
+        "start",
+        "finish",
+        "introduction",
+        "summary"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#/items/properties/id",
+          "type": "integer",
+          "title": "The Id Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "header": {
+          "$id": "#/items/properties/header",
+          "type": "string",
+          "title": "The Header Schema",
+          "default": "",
+          "examples": [
+            "Introduction"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "book": {
+          "$id": "#/items/properties/book",
+          "type": "string",
+          "title": "The Book Schema",
+          "default": "",
+          "examples": [
+            "James"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "chapter": {
+          "$id": "#/items/properties/chapter",
+          "type": "integer",
+          "title": "The Chapter Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "start": {
+          "$id": "#/items/properties/start",
+          "type": "integer",
+          "title": "The Start Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "finish": {
+          "$id": "#/items/properties/finish",
+          "type": "integer",
+          "title": "The Finish Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "introduction": {
+          "$id": "#/items/properties/introduction",
+          "type": "array",
+          "title": "The Introduction Schema",
+          "items": {
+            "$id": "#/items/properties/introduction/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "About James",
+              "James was the younger brother of Jesus.",
+              "Wealth of knowledge, may sound like his older brother sometimes.",
+              "Cross reference into the Gospels and Jesus Teachings",
+              "Book of James thought to be written 40 AD.",
+              "James is mentioned in Jerusalem Council: Act 15.",
+              "James was martyred 62 AD."
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "summary": {
+          "$id": "#/items/properties/summary",
+          "type": "array",
+          "title": "The Summary Schema",
+          "items": {
+            "$id": "#/items/properties/summary/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "Blueprint for how to think, act, plan as a Christian.",
+              "Book can be crushingly hard. Reading it can make me feel like a failure.",
+              "Important to dwell on the gospel: Now that I have been redeemed, how do I live?",
+              "Now that I have heard the word of God, how do I do it?",
+              "Spirits power: Remind ourselves the reason why we can attempt to be this way.",
+              "James isn't telling us how to get saved, he is telling us how to live now that we are saved.",
+              "Try and mix in some encouragement from other his and other books."
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }

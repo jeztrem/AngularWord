@@ -1,0 +1,28 @@
+[
+    {
+        "chapter": 2,
+        "verse": [
+            {
+                "index": 8,
+                "text": "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God,"
+            },
+            {
+                "index": 9,
+                "text": "not a result of works, so that no one may boast."
+            },
+            {
+                "index": 10,
+                "text": "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them."
+            }
+        ]
+    },
+    {
+        "chapter": 6,
+        "verse": [
+            {
+                "index": 16,
+                "text": "In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one;"
+            }
+        ]
+    }
+]

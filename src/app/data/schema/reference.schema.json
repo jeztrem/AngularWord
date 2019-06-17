@@ -1,0 +1,107 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+        "chapter",
+        "verse"
+      ],
+      "properties": {
+        "chapter": {
+          "$id": "#/items/properties/chapter",
+          "type": "integer",
+          "title": "The Chapter Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "verse": {
+          "$id": "#/items/properties/verse",
+          "type": "array",
+          "title": "The Verse Schema",
+          "items": {
+            "$id": "#/items/properties/verse/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "index",
+              "references"
+            ],
+            "properties": {
+              "index": {
+                "$id": "#/items/properties/verse/items/properties/index",
+                "type": "integer",
+                "title": "The Index Schema",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "references": {
+                "$id": "#/items/properties/verse/items/properties/references",
+                "type": "array",
+                "title": "The References Schema",
+                "items": {
+                  "$id": "#/items/properties/verse/items/properties/references/items",
+                  "type": "object",
+                  "title": "The Items Schema",
+                  "required": [
+                    "book",
+                    "chapter",
+                    "start",
+                    "finish"
+                  ],
+                  "properties": {
+                    "book": {
+                      "$id": "#/items/properties/verse/items/properties/references/items/properties/book",
+                      "type": "string",
+                      "title": "The Book Schema",
+                      "default": "",
+                      "examples": [
+                        "John"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "chapter": {
+                      "$id": "#/items/properties/verse/items/properties/references/items/properties/chapter",
+                      "type": "integer",
+                      "title": "The Chapter Schema",
+                      "default": 0,
+                      "examples": [
+                        7
+                      ]
+                    },
+                    "start": {
+                      "$id": "#/items/properties/verse/items/properties/references/items/properties/start",
+                      "type": "integer",
+                      "title": "The Start Schema",
+                      "default": 0,
+                      "examples": [
+                        5
+                      ]
+                    },
+                    "finish": {
+                      "$id": "#/items/properties/verse/items/properties/references/items/properties/finish",
+                      "type": "integer",
+                      "title": "The Finish Schema",
+                      "default": 0,
+                      "examples": [
+                        5
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

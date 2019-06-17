@@ -1,0 +1,62 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+        "chapter",
+        "verse"
+      ],
+      "properties": {
+        "chapter": {
+          "$id": "#/items/properties/chapter",
+          "type": "integer",
+          "title": "Chapter of the book.",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "verse": {
+          "$id": "#/items/properties/verse",
+          "type": "array",
+          "title": "Verse of the chapter.",
+          "items": {
+            "$id": "#/items/properties/verse/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "index",
+              "text"
+            ],
+            "properties": {
+              "index": {
+                "$id": "#/items/properties/verse/items/properties/index",
+                "type": "integer",
+                "title": "Verse number.",
+                "default": 0,
+                "examples": [
+                  52
+                ]
+              },
+              "text": {
+                "$id": "#/items/properties/verse/items/properties/text",
+                "type": "string",
+                "title": "Verse text.",
+                "default": "",
+                "examples": [
+                  "he has brought down the mighty from their thrones and exalted those of humble estate; "
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

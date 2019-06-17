@@ -1,0 +1,92 @@
+<app-section-header></app-section-header>
+
+<mat-accordion>
+  <div class="mat-subtitle margin=10">
+    <mat-expansion-panel class="margin=50">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Introduction</mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-card>
+        <textarea matInput class="mat-body-2" required placeholder="Introduction Content"
+          [(ngModel)]="sectionedit.section.introductionAsString" mat-autosize="true"></textarea>
+      </mat-card>
+    </mat-expansion-panel>
+  </div>
+</mat-accordion>
+
+<mat-accordion>
+  <mat-expansion-panel class="margin=50" *ngFor="let versedetail of sectionedit.versedetails">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ sectionedit.section.chapter }}:{{ versedetail.index }}</mat-panel-title>
+      <mat-panel-description>{{ versedetail.text }}</mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div class="mat-subtitle">Remarks</div>
+    <mat-card>
+      <textarea matInput class="mat-body-2" required placeholder="Remarks Content" [(ngModel)]="versedetail.remarksAsString"
+        mat-autosize="true"></textarea>
+    </mat-card>
+
+    <div class="mat-subtitle">Applications</div>
+    <mat-card>
+      <textarea matInput class="mat-body-2" required placeholder="Remarks Content"
+        [(ngModel)]="versedetail.applicationsAsString" mat-autosize="true"></textarea>
+    </mat-card>
+
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion>
+  <div class="mat-subtitle margin=10">
+    <mat-expansion-panel class="margin=50">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Summary</mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-card>
+        <textarea matInput class="mat-body-2" required placeholder="Summary Content"
+          [(ngModel)]="sectionedit.section.summaryAsString" mat-autosize="true"></textarea>
+      </mat-card>
+    </mat-expansion-panel>
+  </div>
+</mat-accordion>
+<mat-action-row>
+  <button mat-button color="primary" (click)="userClickedOnSave()">Save</button>
+</mat-action-row>
+<!-- <mat-accordion>
+  <div *ngIf="section.summary">
+    <div class="mat-subtitle margin=10">
+      <mat-expansion-panel class="margin=50">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Summary</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-action-row *ngFor="let entry of section.summary">
+          <mat-panel-title>{{ entry }}</mat-panel-title>
+          <button mat-button color="primary">EDIT</button>
+          <button mat-button color="warn">DELETE</button>
+        </mat-action-row>
+        <mat-card>
+          <form>
+            <mat-form-field>
+              <textarea matInput name="entrySummary" ngModel required placeholder="Summary Content"></textarea>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">ADD</button>
+          </form>
+        </mat-card>
+      </mat-expansion-panel>
+    </div>
+  </div>
+</mat-accordion> -->
+
+
+<!-- <div *ngIf="versedetail.references">
+      <div class="mat-subtitle">References</div>
+      <ul *ngFor="let reference of versedetail.references">
+        <li class="mat-body-2" *ngIf="reference.start === reference.finish; else referenceTemplate">
+          {{ reference.book }} {{reference.chapter}}:{{reference.start}} {{ reference.text }}</li>
+        <ng-template #referenceTemplate>
+          <li class="mat-body-2">
+            {{ reference.book }} {{ reference.chapter }}:{{ reference.start }}-{{ reference.finish }}
+            {{ reference.text }}</li>
+        </ng-template>
+      </ul>
+    </div> -->

@@ -1,0 +1,74 @@
+<app-section-header></app-section-header>
+
+<mat-accordion>
+  <div *ngIf="section.introduction">
+    <div class="mat-subtitle margin=10">
+      <mat-expansion-panel class="margin=50">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Introduction</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li class="mat-body-2" *ngFor="let entry of section.introduction">
+            {{ entry }}
+          </li>
+        </ul>
+      </mat-expansion-panel>
+    </div>
+  </div>
+</mat-accordion>
+
+<mat-accordion>
+  <mat-expansion-panel class="margin=50" *ngFor="let versedetail of versedetails">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ section.chapter }}:{{ versedetail.index }}</mat-panel-title>
+      <mat-panel-description>{{ versedetail.text }}</mat-panel-description>
+    </mat-expansion-panel-header>
+    <div *ngIf="versedetail.remarks.length > 0">
+      <div class="mat-subtitle">Remarks</div>
+      <ul>
+        <li class="mat-body-2" *ngFor="let remark of versedetail.remarks">
+          {{ remark }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="versedetail.applications.length > 0">
+      <div class="mat-subtitle">Applications</div>
+      <ul>
+        <li class="mat-body-2" *ngFor="let application of versedetail.applications">
+          {{ application }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="versedetail.references.length > 0">
+      <div class="mat-subtitle">References</div>
+      <ul *ngFor="let reference of versedetail.references">
+        <li class="mat-body-2" *ngIf="reference.start === reference.finish; else referenceTemplate">
+          {{ reference.book }} {{reference.chapter}}:{{reference.start}} {{ reference.text }}</li>
+        <ng-template #referenceTemplate>
+          <li class="mat-body-2">
+            {{ reference.book }} {{ reference.chapter }}:{{ reference.start }}-{{ reference.finish }}
+            {{ reference.text }}</li>
+        </ng-template>
+      </ul>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion>
+  <div *ngIf="section.summary">
+    <div class="mat-subtitle margin=10">
+      <mat-expansion-panel class="margin=50">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Summary</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li class="mat-subtitle" *ngFor="let entry of section.summary">{{ entry }}</li>
+        </ul>
+      </mat-expansion-panel>
+    </div>
+  </div>
+</mat-accordion>
+
+<mat-action-row>
+  <button mat-button color="primary" (click)="userClickedOnEdit()">EDIT</button>
+</mat-action-row>

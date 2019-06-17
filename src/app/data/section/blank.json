@@ -1,0 +1,39 @@
+[
+    {
+        "id": 0,
+        "header": "Introduction",
+        "book": "Obadiah",
+        "chapter": 1,
+        "start": 1,
+        "finish": 1,
+        "introduction": [
+           
+        ],
+        "summary": [
+        ]
+    },
+    {
+        "id": 1,
+        "header": "Finding Joy in Trials",
+        "book": "Obadiah",
+        "chapter": 1,
+        "start": 2,
+        "finish": 4,
+        "introduction": [
+        ],
+        "summary": [
+        ]
+    },
+    {
+        "id": 2,
+        "header": "Asking for Wisdom",
+        "book": "Obadiah",
+        "chapter": 1,
+        "start": 5,
+        "finish": 8,
+        "introduction": [
+        ],
+        "summary": [
+        ]
+    }
+]

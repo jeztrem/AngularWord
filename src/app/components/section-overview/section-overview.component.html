@@ -1,0 +1,9 @@
+<mat-card (click)="userClicked()">
+    <mat-card-title >{{ section.header }}</mat-card-title>
+    <mat-card-footer *ngIf="section.start === section.finish; else multipleVerses">
+        {{ section.chapter }}:{{ section.start }}</mat-card-footer>
+    <ng-template #multipleVerses>
+        <mat-card-footer>{{ section.chapter }}:{{ section.start }} - {{ section.finish }}
+        </mat-card-footer>
+    </ng-template>
+</mat-card>

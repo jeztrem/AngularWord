@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <div class="mat-title" *ngIf="section.start === section.finish; else multipleVerses">
+    {{ section.header }}
+    {{ section.chapter }}:{{ section.start }}
+  </div>
+  <ng-template #multipleVerses>
+    <div class="mat-title">
+      {{ section.header }}
+      {{ section.chapter }}:{{ section.start }}-{{ section.finish }}
+    </div>
+  </ng-template>
+</mat-toolbar>

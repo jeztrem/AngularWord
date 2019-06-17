@@ -1,0 +1,45 @@
+[
+    {
+        "chapter": 5,
+        "verse": [
+            {
+                "index": 3,
+                "text": "Not only that, but we rejoice in our sufferings, knowing that suffering produces endurance,"
+            },
+            {
+                "index": 4,
+                "text": "and endurance produces character, and character produces hope,"
+            },
+            {
+                "index": 5,
+                "text": "and hope does not put us to shame, because God’s love has been poured into our hearts through the Holy Spirit who has been given to us."
+            },
+            {
+                "index": 4,
+                "text": ""
+            },
+            {
+                "index": 5,
+                "text": ""
+            }
+        ]
+    },
+    {
+        "chapter": 3,
+        "verse": [
+            {
+                "index": 21,
+                "text": "But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it—"
+            },{
+                "index": 22,
+                "text": "the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction:"
+            },{
+                "index": 23,
+                "text": "for all have sinned and fall short of the glory of God,"
+            },{
+                "index": 24,
+                "text": "and are justified by his grace as a gift, through the redemption that is in Christ Jesus,"
+            }
+        ]
+    }
+]

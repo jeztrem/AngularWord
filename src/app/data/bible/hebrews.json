@@ -1,0 +1,49 @@
+[
+    {
+        "chapter": 3,
+        "verse": [
+            {
+                "index": 7,
+                "text": "Therefore, as the Holy Spirit says, “Today, if you hear his voice,"
+            },
+            {
+                "index": 8,
+                "text": "do not harden your hearts as in the rebellion, on the day of testing in the wilderness,"
+            },
+            {
+                "index": 3,
+                "text": ""
+            },
+            {
+                "index": 4,
+                "text": ""
+            },
+            {
+                "index": 5,
+                "text": ""
+            }
+        ]
+    },
+    {
+        "chapter": 11,
+        "verse": [
+            {
+                "index": 1,
+                "text": "Now faith is the assurance of things hoped for, the conviction of things not seen."
+            },
+            {
+                "index": 6,
+                "text": "And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him."
+            }
+        ]
+    },
+    {
+        "chapter": 13,
+        "verse": [
+            {
+                "index": 8,
+                "text": "Jesus Christ is the same yesterday and today and forever."
+            }
+        ]
+    }
+]

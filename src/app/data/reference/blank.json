@@ -1,0 +1,95 @@
+[
+    {
+        "chapter": 1,
+        "verse": [
+            {
+                "index": 1,
+                "references": [
+                    {
+                        "book": "John",
+                        "chapter": 7,
+                        "start": 5,
+                        "finish": 5
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "references": [
+                    {
+                        "book": "Matthew",
+                        "chapter": 6,
+                        "start": 13,
+                        "finish": 13
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 26,
+                        "start": 41,
+                        "finish": 41
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "references": [
+                    {
+                        "book": "1 Peter",
+                        "chapter": 1,
+                        "start": 7,
+                        "finish": 7
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "references": [
+                    {
+                        "book": "Romans",
+                        "chapter": 5,
+                        "start": 3,
+                        "finish": 5
+                    } 
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": 2,
+        "verse": [
+            {
+                "index": 4,
+                "references": [
+                    {
+                        "book": "Leviticus",
+                        "chapter": 19,
+                        "start": 15,
+                        "finish": 15
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 9,
+                        "finish": 9
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": 4,
+        "verse": [
+            {
+                "index": 0,
+                "references": [
+                    {
+                        "book": "",
+                        "chapter": 3,
+                        "start": 5,
+                        "finish": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

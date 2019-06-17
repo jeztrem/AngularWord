@@ -1,0 +1,87 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+        "chapter",
+        "versenotes"
+      ],
+      "properties": {
+        "chapter": {
+          "$id": "#/items/properties/chapter",
+          "type": "integer",
+          "title": "The Chapter Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "versenotes": {
+          "$id": "#/items/properties/versenotes",
+          "type": "array",
+          "title": "The Versenotes Schema",
+          "items": {
+            "$id": "#/items/properties/versenotes/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "index",
+              "remarks",
+              "applications"
+            ],
+            "properties": {
+              "index": {
+                "$id": "#/items/properties/versenotes/items/properties/index",
+                "type": "integer",
+                "title": "The Index Schema",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "remarks": {
+                "$id": "#/items/properties/versenotes/items/properties/remarks",
+                "type": "array",
+                "title": "The Remarks Schema",
+                "items": {
+                  "$id": "#/items/properties/versenotes/items/properties/remarks/items",
+                  "type": "string",
+                  "title": "The Items Schema",
+                  "default": "",
+                  "examples": [
+                    "Now a servant of Christ",
+                    "Dispersion: Jewish Christians."
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              },
+              "applications": {
+                "$id": "#/items/properties/versenotes/items/properties/applications",
+                "type": "array",
+                "title": "The Applications Schema",
+                "items": {
+                  "$id": "#/items/properties/versenotes/items/properties/applications/items",
+                  "type": "string",
+                  "title": "Points of application about the scripture.",
+                  "default": "",
+                  "examples": [
+                    "Book written to the believer, us, and not to anyone else.",
+                    "Brother is used all the time.",
+                    "ἀδελφοί (adelphoi),  A brother, member of the same religious community, especially a fellow-Christian. A brother near or remote.",
+                    "Same word in Luke 8:21 when Jesus tells the crowd that his mother and brother are those who hear the word of God and do it."
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

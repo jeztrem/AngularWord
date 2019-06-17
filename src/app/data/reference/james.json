@@ -1,0 +1,746 @@
+[
+    {
+        "chapter": 1,
+        "verse": [
+            {
+                "index": 1,
+                "references": [
+                    {
+                        "book": "John",
+                        "chapter": 7,
+                        "start": 5,
+                        "finish": 5
+                    },
+                    {
+                        "book": "1 Peter",
+                        "chapter": 1,
+                        "start": 1,
+                        "finish": 1
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 8,
+                        "start": 21,
+                        "finish": 21
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "references": [
+                    {
+                        "book": "Matthew",
+                        "chapter": 6,
+                        "start": 13,
+                        "finish": 13
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 26,
+                        "start": 41,
+                        "finish": 41
+                    },
+                    {
+                        "book": "Hebrews",
+                        "chapter": 3,
+                        "start": 8,
+                        "finish": 8
+                    },
+                    {
+                        "book": "1 Peter",
+                        "chapter": 1,
+                        "start": 6,
+                        "finish": 6
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "references": [
+                    {
+                        "book": "1 Peter",
+                        "chapter": 1,
+                        "start": 7,
+                        "finish": 7
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 13,
+                        "start": 20,
+                        "finish": 21
+                    },
+                    {
+                        "book": "Deuteronomy",
+                        "chapter": 8,
+                        "start": 2,
+                        "finish": 5
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "references": [
+                    {
+                        "book": "Romans",
+                        "chapter": 5,
+                        "start": 3,
+                        "finish": 5
+                    },
+                    {
+                        "book": "1 Peter",
+                        "chapter": 1,
+                        "start": 6,
+                        "finish": 7
+                    },
+                    {
+                        "book": "1 Peter",
+                        "chapter": 2,
+                        "start": 21,
+                        "finish": 21
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 5,
+                        "start": 11,
+                        "finish": 11
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "references": [
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 17,
+                        "finish": 17
+                    },
+                    {
+                        "book": "1 Corinthians",
+                        "chapter": 1,
+                        "start": 18,
+                        "finish": 25
+                    },
+                    {
+                        "book": "2 Corinthians",
+                        "chapter": 12,
+                        "start": 7,
+                        "finish": 10
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 3,
+                        "start": 5,
+                        "finish": 8
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 8,
+                        "start": 17,
+                        "finish": 17
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 7,
+                        "start": 7,
+                        "finish": 11
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "references": [
+                    {
+                        "book": "Matthew",
+                        "chapter": 21,
+                        "start": 21,
+                        "finish": 22
+                    },
+                    {
+                        "book": "Hebrews",
+                        "chapter": 11,
+                        "start": 1,
+                        "finish": 1
+                    },
+                    {
+                        "book": "1 John",
+                        "chapter": 5,
+                        "start": 14,
+                        "finish": 14
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "references": []
+            },
+            {
+                "index": 8,
+                "references": [
+                    {
+                        "book": "Psalms",
+                        "chapter": 78,
+                        "start": 19,
+                        "finish": 19
+                    },
+                    {
+                        "book": "Ephesians",
+                        "chapter": 6,
+                        "start": 16,
+                        "finish": 16
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "references": [
+                    {
+                        "book": "Matthew",
+                        "chapter": 5,
+                        "start": 3,
+                        "finish": 3
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 6,
+                        "start": 20,
+                        "finish": 22
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 2,
+                        "start": 5,
+                        "finish": 5
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "references": [
+                    {
+                        "book": "Luke",
+                        "chapter": 6,
+                        "start": 24,
+                        "finish": 25
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "references": [
+                    {
+                        "book": "Luke",
+                        "chapter": 1,
+                        "start": 52,
+                        "finish": 52
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 23,
+                        "start": 12,
+                        "finish": 12
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 6,
+                        "start": 20,
+                        "finish": 21
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 12,
+                        "start": 21,
+                        "finish": 21
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 12,
+                        "start": 33,
+                        "finish": 33
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 12,
+                        "start": 48,
+                        "finish": 48
+                    },
+                    {
+                        "book": "Psalms",
+                        "chapter": 90,
+                        "start": 5,
+                        "finish": 6
+                    },
+                    {
+                        "book": "Isaiah",
+                        "chapter": 40,
+                        "start": 6,
+                        "finish": 8
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 30,
+                        "start": 7,
+                        "finish": 9
+                    },
+                    {
+                        "book": "Mark",
+                        "chapter": 10,
+                        "start": 21,
+                        "finish": 21
+                    },
+                    {
+                        "book": "1 Timothy",
+                        "chapter": 6,
+                        "start": 17,
+                        "finish": 19
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "references": [
+                    {
+                        "book": "2 Timothy",
+                        "chapter": 4,
+                        "start": 8,
+                        "finish": 8
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "references": []
+            },
+            {
+                "index": 14,
+                "references": [
+                    {
+                        "book": "Mark",
+                        "chapter": 7,
+                        "start": 20,
+                        "finish": 23
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "references": []
+            },
+            {
+                "index": 17,
+                "references": [
+                    {
+                        "book": "Genesis",
+                        "chapter": 1,
+                        "start": 31,
+                        "finish": 31
+                    },
+                    {
+                        "book": "Romans",
+                        "chapter": 3,
+                        "start": 21,
+                        "finish": 24
+                    },
+                    {
+                        "book": "Hebrews",
+                        "chapter": 13,
+                        "start": 8,
+                        "finish": 8
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "references": [
+                    {
+                        "book": "Ephesians",
+                        "chapter": 2,
+                        "start": 8,
+                        "finish": 10
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "references": [
+                    {
+                        "book": "Ecclesiastes",
+                        "chapter": 7,
+                        "start": 9,
+                        "finish": 9
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 16,
+                        "start": 32,
+                        "finish": 32
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 9,
+                        "finish": 10
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 14,
+                        "finish": 18
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 5,
+                        "start": 22,
+                        "finish": 22
+                    },
+                    {
+                        "book": "Hebrews",
+                        "chapter": 3,
+                        "start": 7,
+                        "finish": 8
+                    },
+                    {
+                        "book": "Exodus",
+                        "chapter": 34,
+                        "start": 6,
+                        "finish": 7
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 12,
+                        "start": 33,
+                        "finish": 37
+                    },
+                    {
+                        "book": "1 Peter",
+                        "chapter": 2,
+                        "start": 12,
+                        "finish": 12
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "references": [
+                    {
+                        "book": "Jeremiah",
+                        "chapter": 31,
+                        "start": 33,
+                        "finish": 33
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "references": [
+                    {
+                        "book": "Matthew",
+                        "chapter": 7,
+                        "start": 24,
+                        "finish": 27
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 6,
+                        "start": 46,
+                        "finish": 49
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 8,
+                        "start": 8,
+                        "finish": 10
+                    },
+                    {
+                        "book": "Luke",
+                        "chapter": 9,
+                        "start": 23,
+                        "finish": 23
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "references": [
+                    {
+                        "book": "Isaiah",
+                        "chapter": 61,
+                        "start": 1,
+                        "finish": 1
+                    },
+                    {
+                        "book": "John",
+                        "chapter": 8,
+                        "start": 32,
+                        "finish": 32
+                    },
+                    {
+                        "book": "John",
+                        "chapter": 8,
+                        "start": 36,
+                        "finish": 36
+                    },
+                    {
+                        "book": "Galations",
+                        "chapter": 5,
+                        "start": 13,
+                        "finish": 14
+                    },
+                    {
+                        "book": "1 Peter",
+                        "chapter": 1,
+                        "start": 16,
+                        "finish": 16
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "references": [
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 8,
+                        "finish": 8
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 8,
+                        "finish": 8
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "references": [
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 8,
+                        "finish": 8
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 8,
+                        "finish": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": 2,
+        "verse": [
+            {
+                "index": 4,
+                "references": [
+                    {
+                        "book": "Leviticus",
+                        "chapter": 19,
+                        "start": 15,
+                        "finish": 15
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 9,
+                        "finish": 9
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "references": [
+                    {
+                        "book": "James",
+                        "chapter": 1,
+                        "start": 12,
+                        "finish": 12
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "references": [
+                    {
+                        "book": "Leviticus",
+                        "chapter": 19,
+                        "start": 18,
+                        "finish": 18
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "references": [
+                    {
+                        "book": "James",
+                        "chapter": 2,
+                        "start": 14,
+                        "finish": 18
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": 3,
+        "verse": [
+            {
+                "index": 2,
+                "references": [
+                    {
+                        "book": "Luke",
+                        "chapter": 11,
+                        "start": 42,
+                        "finish": 42
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "references": [
+                    {
+                        "book": "Proverbs",
+                        "chapter": 10,
+                        "start": 11,
+                        "finish": 11
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 15,
+                        "start": 1,
+                        "finish": 1
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 15,
+                        "start": 2,
+                        "finish": 2
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 16,
+                        "start": 1,
+                        "finish": 1
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 16,
+                        "start": 32,
+                        "finish": 32
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "references": [
+                    {
+                        "book": "Proverbs",
+                        "chapter": 15,
+                        "start": 1,
+                        "finish": 1
+                    },
+                    {
+                        "book": "Proverbs",
+                        "chapter": 15,
+                        "start": 2,
+                        "finish": 2
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 4,
+                        "start": 6,
+                        "finish": 6
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 3,
+                        "start": 14,
+                        "finish": 14
+                    },
+                    {
+                        "book": "James",
+                        "chapter": 4,
+                        "start": 16,
+                        "finish": 16
+                    },
+                    {
+                        "book": "Matthew",
+                        "chapter": 15,
+                        "start": 11,
+                        "finish": 11
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "references": [
+                    {
+                        "book": "Genesis",
+                        "chapter": 1,
+                        "start": 28,
+                        "finish": 28
+                    },
+                    {
+                        "book": "Psalms",
+                        "chapter": 140,
+                        "start": 3,
+                        "finish": 3
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "references": [
+                    {
+                        "book": "Matthew",
+                        "chapter": 5,
+                        "start": 22,
+                        "finish": 22
+                    }
+                ]
+            },
+            {
+                "index": 0,
+                "references": [
+                    {
+                        "book": "",
+                        "chapter": 3,
+                        "start": 5,
+                        "finish": 0
+                    }
+                ]
+            },
+            {
+                "index": 0,
+                "references": [
+                    {
+                        "book": "",
+                        "chapter": 3,
+                        "start": 5,
+                        "finish": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": 4,
+        "verse": [
+            {
+                "index": 0,
+                "references": [
+                    {
+                        "book": "",
+                        "chapter": 3,
+                        "start": 5,
+                        "finish": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

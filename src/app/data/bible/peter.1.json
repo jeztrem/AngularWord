@@ -1,0 +1,44 @@
+[
+    {
+        "chapter": 1,
+        "verse": [
+            {
+                "index": 1,
+                "text": "Peter, an apostle of Jesus Christ, To those who are elect exiles of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,"
+            },
+            {
+                "index": 6,
+                "text": "In this you rejoice, though now for a little while, if necessary, you have been grieved by various trials,"
+            },
+            {
+                "index": 7,
+                "text": "so that the tested genuineness of your faith—more precious than gold that perishes though it is tested by fire—may be found to result in praise and glory and honor at the revelation of Jesus Christ."
+            },
+            {
+                "index": 16,
+                "text": "Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God."
+            }
+        ]
+    },
+    {
+        "chapter": 2,
+        "verse": [
+            {
+                "index": 12,
+                "text": "Keep your conduct among the Gentiles honorable, so that when they speak against you as evildoers, they may see your good deeds and glorify God on the day of visitation."
+            },
+            {
+                "index": 21,
+                "text": "For to this you have been called, because Christ also suffered for you, leaving you an example, so that you might follow in his steps."
+            }
+        ]
+    },
+    {
+        "chapter": 5,
+        "verse": [
+            {
+                "index": 5,
+                "text": "Likewise, you who are younger, be subject to the elders. Clothe yourselves, all of you, with humility toward one another, for “God opposes the proud but gives grace to the humble.”"      }
+        ]
+    }
+]
