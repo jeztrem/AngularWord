@@ -36,6 +36,7 @@ import james from '../data/bible/james.json';
 import peter1 from '../data/bible/peter.1.json';
 import john1 from '../data/bible/john.1.json';
 
+// This needs to be program wide
 // import james_sections from '../data/section/james.json';
 // import james_notes from '../data/note/james.json';
 // import james_references from '../data/reference/james.json';
