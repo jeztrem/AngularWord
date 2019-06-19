@@ -34,6 +34,7 @@ import titus from '../data/bible/titus.json';
 import hebrews from '../data/bible/hebrews.json';
 import james from '../data/bible/james.json';
 import peter1 from '../data/bible/peter.1.json';
+import peter2 from '../data/bible/peter.2.json';
 import john1 from '../data/bible/john.1.json';
 
 // This needs to be program wide
@@ -98,6 +99,7 @@ export class VerseService {
     this.bibleKeyValue.set('Hebrews', hebrews);
     this.bibleKeyValue.set('James', james);
     this.bibleKeyValue.set('1 Peter', peter1);
+    this.bibleKeyValue.set('2 Peter', peter2);
     this.bibleKeyValue.set('1 John', john1);
 
     this.sectionKeyValue.set('Obadiah', obadiah_sections);

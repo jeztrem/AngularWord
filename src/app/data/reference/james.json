@@ -18,6 +18,12 @@
                         "finish": 1
                     },
                     {
+                        "book": "2 Peter",
+                        "chapter": 1,
+                        "start": 3,
+                        "finish": 8
+                    },
+                    {
                         "book": "Luke",
                         "chapter": 8,
                         "start": 21,
