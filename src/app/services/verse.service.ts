@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+import { Bible } from '../model/bible';
 import { Book } from '../model/book';
 import { Section } from '../model/section';
 import { Note } from '../model/note';
@@ -28,6 +29,7 @@ import corinthians1 from '../data/bible/corinthians.1.json';
 import corinthians2 from '../data/bible/corinthians.2.json';
 import galatians from '../data/bible/galatians.json';
 import ephesians from '../data/bible/ephesians.json';
+import thessalonians1 from '../data/bible/thessalonians.1.json';
 import timothy1 from '../data/bible/timothy.1.json';
 import timothy2 from '../data/bible/timothy.2.json';
 import titus from '../data/bible/titus.json';
@@ -54,10 +56,12 @@ import obadiah_references from '../data/reference/obadiah.json';
 export class VerseService {
   /* This is a work around for '1 John' stored as 'John1' */
   /* The Key is what the user sees, the Value is what the app uses.*/
-  bibleKeyValue = new Map<string, Book.RootObject[]>();
+  //books=string[];
+  //bible = new Bible.RootObject(books:string[]);
+  bookKeyValue = new Map<string, Book.RootObject[]>();
   sectionKeyValue = new Map<string, Section.RootObject[]>();
   noteKeyValue = new Map<string, Note.RootObject[]>();
-  referenceKeyValue = new Map<string, any>(); // no class for this JSON object.
+  referenceKeyValue = new Map<string, any>(); // no class necessary for this JSON object.
 
   section: Section.RootObject;
   sections: Section.RootObject[] = [];
@@ -71,36 +75,37 @@ export class VerseService {
 
   setKeyValues() {
 
-    this.bibleKeyValue.set('Genesis', genesis);
-    this.bibleKeyValue.set('Exodus', exodus);
-    this.bibleKeyValue.set('Leviticus', leviticus);
-    this.bibleKeyValue.set('Numbers', numbers);
-    this.bibleKeyValue.set('Deuteronomy', deuteronomy);
-    this.bibleKeyValue.set('Joshua', joshua);
-    this.bibleKeyValue.set('1 Kings', kings1);
-    this.bibleKeyValue.set('Psalms', psalms);
-    this.bibleKeyValue.set('Proverbs', proverbs);
-    this.bibleKeyValue.set('Ecclesiastes', ecclesiastes);
-    this.bibleKeyValue.set('Isaiah', isaiah);
-    this.bibleKeyValue.set('Jeremiah', jeremiah);
-    this.bibleKeyValue.set('Obadiah', obadiah);
-    this.bibleKeyValue.set('Matthew', matthew);
-    this.bibleKeyValue.set('Mark', mark);
-    this.bibleKeyValue.set('Luke', luke);
-    this.bibleKeyValue.set('John', john);
-    this.bibleKeyValue.set('Romans', romans);
-    this.bibleKeyValue.set('1 Corinthians', corinthians1);
-    this.bibleKeyValue.set('2 Corinthians', corinthians2);
-    this.bibleKeyValue.set('Galations', galatians)
-    this.bibleKeyValue.set('Ephesians', ephesians);
-    this.bibleKeyValue.set('1 Timothy', timothy1);
-    this.bibleKeyValue.set('2 Timothy', timothy2);
-    this.bibleKeyValue.set('Titus', titus);
-    this.bibleKeyValue.set('Hebrews', hebrews);
-    this.bibleKeyValue.set('James', james);
-    this.bibleKeyValue.set('1 Peter', peter1);
-    this.bibleKeyValue.set('2 Peter', peter2);
-    this.bibleKeyValue.set('1 John', john1);
+    this.bookKeyValue.set('Genesis', genesis);
+    this.bookKeyValue.set('Exodus', exodus);
+    this.bookKeyValue.set('Leviticus', leviticus);
+    this.bookKeyValue.set('Numbers', numbers);
+    this.bookKeyValue.set('Deuteronomy', deuteronomy);
+    this.bookKeyValue.set('Joshua', joshua);
+    this.bookKeyValue.set('1 Kings', kings1);
+    this.bookKeyValue.set('Psalms', psalms);
+    this.bookKeyValue.set('Proverbs', proverbs);
+    this.bookKeyValue.set('Ecclesiastes', ecclesiastes);
+    this.bookKeyValue.set('Isaiah', isaiah);
+    this.bookKeyValue.set('Jeremiah', jeremiah);
+    this.bookKeyValue.set('Obadiah', obadiah);
+    this.bookKeyValue.set('Matthew', matthew);
+    this.bookKeyValue.set('Mark', mark);
+    this.bookKeyValue.set('Luke', luke);
+    this.bookKeyValue.set('John', john);
+    this.bookKeyValue.set('Romans', romans);
+    this.bookKeyValue.set('1 Corinthians', corinthians1);
+    this.bookKeyValue.set('2 Corinthians', corinthians2);
+    this.bookKeyValue.set('Galations', galatians);
+    this.bookKeyValue.set('Ephesians', ephesians);
+    this.bookKeyValue.set('1 Thessalonians', thessalonians1);
+    this.bookKeyValue.set('1 Timothy', timothy1);
+    this.bookKeyValue.set('2 Timothy', timothy2);
+    this.bookKeyValue.set('Titus', titus);
+    this.bookKeyValue.set('Hebrews', hebrews);
+    this.bookKeyValue.set('James', james);
+    this.bookKeyValue.set('1 Peter', peter1);
+    this.bookKeyValue.set('2 Peter', peter2);
+    this.bookKeyValue.set('1 John', john1);
 
     this.sectionKeyValue.set('Obadiah', obadiah_sections);
     this.noteKeyValue.set('Obadiah', obadiah_notes);
@@ -137,7 +142,7 @@ export class VerseService {
 
     this.versedetails = [];
 
-    for (const book of this.bibleKeyValue.get('Obadiah')) {
+    for (const book of this.bookKeyValue.get('Obadiah')) {
       if (book.chapter === this.section.chapter) {
         // Now I have the correct chapter.
         for (let index = this.section.start; index <= this.section.finish; index++) {
@@ -197,7 +202,6 @@ export class VerseService {
     return new SectionEdit(this.section, this.versedetails);
   }
 
-
   loadTextFromVerseService(_book: string, _chapter: number, _start: number, _finish: number): Reference {
     const text = this.getVerseText(_book, _chapter, _start, _finish);
     const reference: Reference = new Reference(_book, _chapter, _start, _finish, text);
@@ -207,8 +211,8 @@ export class VerseService {
   getVerseText(_book: string, _chapter: number, _start: number, _finish: number): string {
 
     let versetext = ' ';
-    if (this.bibleKeyValue.has(_book)) {
-      const bibleBookValue: Book.RootObject[] = this.bibleKeyValue.get(_book);
+    if (this.bookKeyValue.has(_book)) {
+      const bibleBookValue: Book.RootObject[] = this.bookKeyValue.get(_book);
       for (const rootObject of bibleBookValue) {
         if (rootObject.chapter === _chapter) {
           // I have the right chapter.
@@ -231,8 +235,8 @@ export class VerseService {
 
     let errMessage = 'yes';
 
-    if (this.bibleKeyValue.has(_book)) {
-      const bibleBookValue: Book.RootObject[] = this.bibleKeyValue.get(_book);
+    if (this.bookKeyValue.has(_book)) {
+      const bibleBookValue: Book.RootObject[] = this.bookKeyValue.get(_book);
       for (const rootObject of bibleBookValue) {
         if (rootObject.chapter === _chapter) {
           // I have the right chapter.

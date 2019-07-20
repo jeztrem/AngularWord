@@ -2,7 +2,6 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}"
     ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/1463bbd6-dc4c-4c1c-a8a8-3c078d5ec1a7/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/stcloudjames",
     "appService.deploySubpath": "",
     "json.schemas": [
         {
